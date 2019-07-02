@@ -40,6 +40,9 @@ if(BUILD_DOC)
     endif()
 endif()
 
+enable_testing()
+
 add_subdirectory(sources)
 add_subdirectory(tests)
 add_subdirectory(apps)
+add_subdirectory(extern)

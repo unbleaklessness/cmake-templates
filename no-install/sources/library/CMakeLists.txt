@@ -4,6 +4,4 @@ set(NAME library)
 
 add_library(${NAME} library.cpp)
 
-target_include_directories(${NAME}
-        PUBLIC "${PROJECT_SOURCE_DIR}/include/${NAME}"
-        PRIVATE "${PROJECT_SOURCE_DIR}/src/${NAME}")
+target_include_directories(${NAME} PUBLIC "${PROJECT_SOURCE_DIR}/include/${NAME}" PRIVATE "${PROJECT_SOURCE_DIR}/sources/${NAME}")
